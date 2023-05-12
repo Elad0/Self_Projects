@@ -1,0 +1,8 @@
+button {
+  width: 200px; /* double the default width */
+  height: 80px; /* double the default height */
+  font-size: 24px; /* increase the font size for better visibility */
+  display: block; /* to center horizontally */
+  margin: 0 auto; /* to center horizontally */
+  margin-top: 50px; /* to add some vertical spacing */
+}

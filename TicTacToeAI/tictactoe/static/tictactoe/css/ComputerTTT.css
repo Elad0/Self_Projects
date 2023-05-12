@@ -1,0 +1,88 @@
+/* Container styles */
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #1d1d1d;
+}
+
+/* Board styles */
+#board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #fff;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #fff;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  background-color: #292929;
+  color: #fff;
+}
+
+/* Set styles for X and O cells */
+.cell.X::before {
+  content: "X";
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2em;
+  color: #00BFFF; /* blue */
+  text-shadow: 2px 2px #000000; /* black shadow */
+  font-weight: bold;
+}
+
+.cell.O::before {
+  content: "O";
+  color: #ff4d4d;
+  font-size: 2em;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px #000000; /* black shadow */
+}
+
+
+/* Blue cell */
+.cell.blue {
+  background-color: #2f80ed;
+}
+
+/* Red cell */
+.cell.red {
+  background-color: #e52d27;
+}
+
+/* Hover styles */
+.cell:hover:not(.blue):not(.red) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Header styles */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Paragraph styles */
+p {
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,63 @@
+@charset "ISO-8859-1";
+
+#board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+}
+	
+.cell {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  background-color: white;
+  border: 1px solid black;
+}
+.cell::before {
+  content: attr(data-value);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 85px;
+}
+
+.cell.X::before {
+  color: blue;
+}
+
+.cell.O::before {
+  color: red;
+}
+
+/* Define the spinning animation */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Apply the spinning animation to an element */
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+.superSpin {
+  animation: spin .5s linear infinite;
+}
+
+button{
+	width: 130px;
+	height: 80px;
+	font-size: 29px;
+}
+
+body{
+	background-image: none;
+}

@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>MainMenu</title>
+<link rel="stylesheet" href="{% static 'tictactoe/css/MainMenu.css' %}">
+</head>
+<body>
+
+<button id="humanbutton">VS. Human</button>
+<button id= "playVersusComputer">Play Versus Computer</button>
+
+<script>
+  document.getElementById("humanbutton").addEventListener("click", function() {
+	  window.location.href = "TicTacToe.html";
+
+  });
+  
+  document.getElementById("playVersusComputer").addEventListener("click", function() {
+	  window.location.href = "AITicTacToe.html";
+  });
+  
+
+	  
+  
+</script>
+
+</body>
+</html>

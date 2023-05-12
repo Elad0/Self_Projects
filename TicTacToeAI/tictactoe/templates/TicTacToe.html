@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>	
+<meta charset="ISO-8859-1">
+<title>TicTacToe</title>
+<link rel="stylesheet" href="{% static 'tictactoe/css/TicTacToe.css' %}">
+<script src="{% static 'tictactoe/js/2PlayerTicTacToe.js' %}"></script>
+</head>
+
+<body>
+
+<h1>TicTacToe Game</h1>
+<div id="container"></div>
+<div id="board"></div>
+
+
+<script>game();</script>
+
+</body>
+</html>
